@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Philosopher&display=swap');
+
+:root {
+    --fonte1: Verdana, Gevena, Tahoma, sans-rif;
+    --fonte2: 'Architects Daughter', cursive;
+    --fonte3: 'Philosopher', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1 {
+     padding-top: 40px;
+     font-variant: small-caps;
+     font-family: var(--fonte2);
+     font-size: 4em;
+}
+
+header > p {
+    padding-bottom: 40px;
+    font-size: 1em;
+}
+ 
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 1.3em;
+    line-height: 25px;
+}
+
+section.normal {
+background-color: white;
+color: black;
+}
+
+section.image {
+background-color: darkslategrey;
+color:white;
+text-shadow: 1.5px 1.5px 0px black;
+box-shadow: inset 4px 4px 4px 0px rgba(0, 0, 0, 0.739);
+background-size: cover;
+background-attachment: fixed;
+}
+
+
+section > p {
+    padding-bottom: 1.3em;
+}
+
+section.image > p {
+    display: inline-block;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.375);
+    
+}
+
+section#img01 {
+background-image: url("imagens/NTK09990.jpg");
+background-position: left left;
+
+}
+
+section#img02 {
+    background-image: url("imagens/NTK09999.jpg");
+background-position: left left;
+
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
